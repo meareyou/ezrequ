@@ -16,7 +16,7 @@ async def _(event):
                 events.NewMessage(
                     incoming=True,
                     from_users=266446332))
-            msg = await event.client.send_message(chat, now)            
+            await bot.send_message(chat, now)          
             response = await response
             """ - don't spam notif - """
             await bot.send_read_acknowledge(conv.chat_id)
